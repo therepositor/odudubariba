@@ -3,7 +3,6 @@ const hamburgerMenu = document.getElementById('hamburger-menu')
 const closeButton = document.getElementById('close')
 const navLink = document.querySelectorAll('.nav-link');
 const arrowUp = document.getElementById('arrow-up');
-const serviceLink = document.querySelectorAll('.service-link');
 const nightMode = document.getElementById('night-mode');
 const body = document.getElementById('body');
 const sun = document.getElementById('sun');
@@ -13,16 +12,13 @@ const cards = document.querySelectorAll('.card');
 const buttonLinks = document.getElementById('button-links');
 const contacts = document.querySelectorAll('.social');
 
-console.log(contacts)
-console.log(serviceLink)
-
 
 const openHamburgerMenu = (e) => {
     
         console.log(e, 'open')
        hamburgerMenu.style.visibility = 'visible';
        hamburgerMenu.style.left = 0;
-       hamburgerMenu.style.transition = '1s left ease'
+       hamburgerMenu.style.transition = '1s left ease';
    
 }
 const closeHamburgerMenu = (e) =>   {
@@ -42,14 +38,7 @@ const moveToTop = (e) => {
         behavior: 'smooth'
     })
 }
-const makeServiceLinkVisible = () =>    {
-    for (let i = 0; i < serviceLink.length; i++) {
-        const element = serviceLink[i];
-        
-            element.style.visibility = 'visible';
-    }
-    
-}
+
 const toggleNightMode = (e) =>   {
     console.log(e, 'nightmode!!!');
     body.classList.toggle('dark-mode');
@@ -75,7 +64,4 @@ navLink.forEach(element => {
     element.addEventListener('click', closeHamburgerMenu)
 });
 arrowUp.addEventListener('click', moveToTop);
-serviceLink.forEach(element => {
-    element.addEventListener('load', makeServiceLinkVisible())
-});
 nightMode.addEventListener('click', toggleNightMode)

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odudubariba - Web developer extraordinaire</title>
+    <title>Odúdúbàribà css, javascript and React projects</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f253bdd862.js" crossorigin="anonymous"></script>
 </head>
-<body id="body">
-    <div id='container' class="container">
+<body id='body'>
+    <div class="container work-container" id='container'>
         <header>
-            <a href="/" class="home-link"><h1>Odúdúbàribà</h1></a>
+            <a href="index.html" class="home-link"><h1>Odúdúbàribà</h1></a>
             <div class="hamburger-night-mode-container">
                 <div id='night-mode' class="night-mode">
                     <svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,9 +36,8 @@
                      </svg>
                                                                     
                 </div>
-                <button id="hamburger-button" class=""  type="menu"><i id="hamburger" class="fas fa-bars"></i></button>
+                <!-- <button id="hamburger-button" class=""  type="menu"><i id="hamburger" class="fas fa-bars"></i></button> -->
             </div>
-           
             <nav id='hamburger-menu' class="hamburger-menu">
                 <button type="button"><i id="close" class="fas fa-times-circle"></i></button>
                 <ul>
@@ -51,62 +50,54 @@
                 
             </nav>
         </header>
-        <main>
-            <section class="about" id='about'>
-                <h1>I'm Jocie - <br>Web Developer</h1>
-                <p>
-                    Intuitive Frontend Developer<br> Open to new and exciting career furthering opportunities.
-                </p>
-            </section>         
-            <section class="services" id="services">
-                <h2>Services</h2>
-                <ul>
-                    <li class="service-link">HTML development</li>
-                    <li class="service-link">CSS development</li>
-                    <li class="service-link">Javascript development</li>
-                    <li class="service-link">Ajax development</li>
-                    <li class="service-link">UI/UX design</li>
-                    <li class="service-link">React development</li>
-                    <li class="service-link">Responsive and Mobile design</li>
-                    <li class="service-link">Cross-browser development </li>
-                </ul>
-            </section>
-            <section class="testimonials-container" id="testimonials">
-                <h2>Testimonials</h2>
-                <ul>
-                    <li class="card">
-                        <blockquote>Click 
-                            <a href="mailto: joeoguntebi@gmail.com">Here</a> if you'd like to be my first testimonial. &#x1F97A
-                        </blockquote>
-                    </li>
-                    <li class="card">
-                        <blockquote>
-                            If you'd reach out to me before now, there will be testimonials
-                        </blockquote>
-                    </li>
-                    <li class="card">
-                        <blockquote>
-                            If you miss the first link, don't miss this <a href="mailto: joeoguntebi@gmail.com">Opportunity</a>
-                        </blockquote>
-                    </li>
-                </ul>
-            </section>
-            <section class="works" id="works">
-                <h2>Works</h2>
-                <div id="button-links" class="buttons-links" >
-                    <a href="work.html">View Work</a>
-                    <a href="mailto: joeoguntebi@gmail.com">Send Message</a>
-                </div>  
-            </section>
-            <section class="contacts-container" id="contact">
-                <ul class="contacts" id='#contact'>
-                    <li class="social"><a href="https://www.instagram.com/thegreymatta" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li class="social"><a href="https://www.twitter.com/therepositor" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li class="social"><a href="https://www.linkedin.com/in/joseph-oguntebi" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li class="social"><a href="https://www.github.com/therepositor" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </section>
-            
+        <main class='work-main'>
+            <h1>Portfolio</h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/expense-tracker-mobileview.png" alt="expense-tracker-mobile-view">
+                    </div>
+                    <div class="card-text">
+                        <span class="github">  <a href="https://www.github.com/therepositor/expense-tracker" target="_blank"><i class="fab fa-github"></i></a></span>
+                        <span class="url"><a href="https://trackmyexpenses.netlify.app" target='_blank' ><i class="fas fa-globe"></i></a></span>
+                        
+                        <p class="description">
+                            Expense tracker built to keep track of all expenses, with features to generate selected report saved, a list overview of all expense entered. Built with react
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./images/therepositor-mobileview.png" alt="therepositor Portfolio landing page">
+                    </div>
+                    <div class="card-text">
+                        <span class="github"><a href="https://github.com/therepositor/joseph-oguntebi" target="_blank"><i class="fab fa-github"></i></a></span>
+                        <span class="url"><a href="https://josephoguntebi.netlify.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a></span>
+                        <p class="description">Portfolio website for Joseph Oguntebi</p>                                            
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-large-view" src="./images/eze-wholesale-large-view.png" alt="eze wholesale large view">
+                    </div>
+                    <div class="card-text">
+                        <span class="github"><a href="https://github.com/therepositor/eze-wholesale-code-challenge" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></span>
+                        <span class="url"><a href="https://ezewholesalebytherepositor.netlify.app" target="_blank"><i class="fas fa-globe"></i></a></span>
+                        <p class="description">Shop used and new iPhones, Macbooks, iPads, Gaming Consoles, and other consumer electronics in the exact conditions you need.</p>   
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-large-view" src="./images/sendfreight-largeview.png" alt="sendfreight large view">
+                    </div>
+                    <div class="card-text">
+                        <span class="github"><a href="https://github.com/therepositor/send-freight" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></span>
+                        <span class="url"><a href="https://sendfreightytherepositor.netlify.app" target="_blank"><i class="fas fa-globe"></i></a></span>
+                        <p class="description">Shop used and new iPhones, Macbooks, iPads, Gaming Consoles, and other consumer electronics in the exact conditions you need.</p>  
+                    </div>
+                </div>
+            </div>
         </main>
         <i class="fas fa-arrow-alt-circle-up" id='arrow-up'></i>
         <footer>
